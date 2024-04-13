@@ -11,15 +11,17 @@ export default class Coins extends Component {
   }
 
   async fetchData() {
-    const baseurl = 'https://min-api.cryptocompare.com/data/price?fsym=SMLY&tsyms=BTC,DOGE,USD'
-    const api_key = process.env.REACT_APP_SERVICE_URL;
-    const url = baseurl + '&api_key=' + api_key;
-
     let response;
     try {
-      response = await fetch(url);
+      const base_url = 'https://api.hybrix.io/source/valuations/rate/smly/usd';
+      response = await fetch(base_url);
       const result = await response.json();
-      this.setState({ loading: false, data: result})
+      const proc_data = result.data;
+      const proc_url = 'https://api.hybrix.io/proc/'+proc_data;
+      response = await fetch(proc_url);
+      const proc_result = await response.json();
+      const value = {'USD': Math.round(proc_result.data*100000000)/100000000};
+      this.setState({ loading: false, data: value})
     } catch (error) {
       console.log('Error fetching', error)
       this.setState({ error: true, loading: false })
