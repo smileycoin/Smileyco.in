@@ -1,14 +1,185 @@
-<p><img src="smiley-rgb_smileycoin-w.png" style="width:90.0%" /></p>
-<h1 class="unnumbered unlisted"
-id="crypto-asset-white-paper-for-smileycoin-smly">Crypto-asset white
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.11" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Crypto-asset white paper for SmileyCoin (SMLY)</title>
+  <style>
+
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+white-space: pre-wrap;
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+border: none;
+border-top: 1px solid #1a1a1a;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<p><img role="img" src="data:image/png;base64,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" style="width:90.0%" /></p>
+<h1 class="unnumbered unlisted" id="crypto-asset-white-paper-for-smileycoin-smly">Crypto-asset white
 paper for SmileyCoin (SMLY)</h1>
 <h1 id="general-information">General information</h1>
 <h2 id="table-of-content">00. Table of content</h2>
 <h2 id="date-of-notification">01. Date of notification</h2>
 <p>Not applicable: this document has not been notified to any competent
 authority.</p>
-<h3
-id="statement-in-accordance-with-article-63-of-regulation-eu-20231114">02.
+<h3 id="statement-in-accordance-with-article-63-of-regulation-eu-20231114">02.
 Statement in accordance with Article 6(3) of Regulation (EU)
 2023/1114</h3>
 <p>This document has not been notified to or approved by any competent
@@ -19,8 +190,7 @@ SmileyCharity is solely responsible for its content.</p>
 SmileyCharity is not the issuer of SMLY, does not offer SMLY to the
 public, does not seek its admission to trading and does not operate a
 trading platform for crypto-assets.</p>
-<h3
-id="compliance-statement-in-accordance-with-article-66-of-regulation-eu-20231114">03.
+<h3 id="compliance-statement-in-accordance-with-article-66-of-regulation-eu-20231114">03.
 Compliance statement in accordance with Article 6(6) of Regulation (EU)
 2023/1114</h3>
 <p>This document follows the structure of Annex I to Regulation (EU)
@@ -28,20 +198,17 @@ Compliance statement in accordance with Article 6(6) of Regulation (EU)
 best of the knowledge of the management body, the information presented
 in this document is fair, clear and not misleading and the document
 makes no omission likely to affect its import.</p>
-<h3
-id="statement-in-accordance-with-article-65-points-a-b-c-of-regulation-eu-20231114">04.
+<h3 id="statement-in-accordance-with-article-65-points-a-b-c-of-regulation-eu-20231114">04.
 Statement in accordance with Article 6(5), points (a), (b), (c), of
 Regulation (EU) 2023/1114</h3>
 <p>The crypto-asset referred to in this crypto-asset white paper may
 lose its value in part or in full, may not always be transferable and
 may not be liquid.</p>
-<h3
-id="statement-in-accordance-with-article-65-point-d-of-regulation-eu-20231114">05.
+<h3 id="statement-in-accordance-with-article-65-point-d-of-regulation-eu-20231114">05.
 Statement in accordance with Article 6(5), point (d), of Regulation (EU)
 2023/1114</h3>
 <p>FALSE; SMLY is not a utility token; see D.6</p>
-<h3
-id="statement-in-accordance-with-article-65-points-e-and-f-of-regulation-eu-20231114">06.
+<h3 id="statement-in-accordance-with-article-65-points-e-and-f-of-regulation-eu-20231114">06.
 Statement in accordance with Article 6(5), points (e) and (f), of
 Regulation (EU) 2023/1114</h3>
 <p>The crypto-asset referred to in this white paper is not covered by
@@ -49,8 +216,7 @@ the investor compensation schemes under Directive 97/9/EC of the
 European Parliament and of the Council or the deposit guarantee schemes
 under Directive 2014/49/EU of the European Parliament and of the
 Council.</p>
-<h3
-id="warning-in-accordance-with-article-67-second-subparagraph-of-regulation-eu-20231114">07.
+<h3 id="warning-in-accordance-with-article-67-second-subparagraph-of-regulation-eu-20231114">07.
 Warning in accordance with Article 6(7), second subparagraph, of
 Regulation (EU) 2023/1114</h3>
 <p>Warning: This summary should be read as an introduction to the
@@ -123,14 +289,12 @@ cold storage. This whitepaper represents both SMLY and BNB.SMLY.</p>
 0xe015f8C012e932F13184061F3ffd956E9000A6CD and a 1-1 swap mechanism
 against SMLY is made available on Hybrix.io. There is no guarantee that
 this swap mechanism will operate indefinitely.</p>
-<h3
-id="information-about-the-quality-and-quantity-of-goods-or-services-to-which-the-utility-tokens-give-access-and-restrictions-on-the-transferability">09.
+<h3 id="information-about-the-quality-and-quantity-of-goods-or-services-to-which-the-utility-tokens-give-access-and-restrictions-on-the-transferability">09.
 Information about the quality and quantity of goods or services to which
 the utility tokens give access and restrictions on the
 transferability</h3>
 <p>Not applicable (see D.6)</p>
-<h3
-id="key-information-about-the-offer-to-the-public-or-admission-to-trading">10.
+<h3 id="key-information-about-the-offer-to-the-public-or-admission-to-trading">10.
 Key information about the offer to the public or admission to
 trading</h3>
 <p>This document is published by SmileyCharity for information. It has
@@ -225,8 +389,7 @@ SmileyCharity in Kenya</em>. Independent evaluation commissioned by
 Iceland’s Ministry for Foreign Affairs. <strong>An evaluation report,
 not a peer-reviewed journal article.</strong></li>
 </ol>
-<h2
-id="part-a-information-about-the-offeror-or-the-person-seeking-admission-to-trading">Part
+<h2 id="part-a-information-about-the-offeror-or-the-person-seeking-admission-to-trading">Part
 A – Information about the offeror or the person seeking admission to
 trading</h2>
 <p>SmileyCharity prepares this document for information, describing
@@ -251,8 +414,7 @@ Associations Operating Across Borders.</p>
 <p>2015-10-13</p>
 <h3 id="a.6-legal-entity-identifier">A.6 Legal entity identifier</h3>
 <p>636700LQMUJ4E4WR0417</p>
-<h3
-id="a.7-another-identifier-required-pursuant-to-applicable-national-law">A.7
+<h3 id="a.7-another-identifier-required-pursuant-to-applicable-national-law">A.7
 Another identifier required pursuant to applicable national law</h3>
 <p>Icelandic registration number (kennitala): 531015-0290</p>
 <h3 id="a.8-contact-telephone-number">A.8 Contact telephone number</h3>
@@ -748,8 +910,7 @@ Smileycoins: Using a Cryptocurrency in Education.” <em>Ledger</em>, 2,
 J. (2024). “On-chain Services for Education in Slums and Refugee Camps.”
 <em>International Journal of Learning and Teaching</em>, 10(6),
 697–702.</p>
-<h2
-id="part-b-information-about-the-issuer-if-different-from-the-offeror-or-person-seeking-admission-to-trading">Part
+<h2 id="part-b-information-about-the-issuer-if-different-from-the-offeror-or-person-seeking-admission-to-trading">Part
 B – Information about the issuer, if different from the offeror or
 person seeking admission to trading</h2>
 <p><strong>Applicability and distinction between project
@@ -816,8 +977,7 @@ to host drills, allocate drill items and store grades, all using
 on-chain operations. As parts of this project, experiments were
 conducted on multiple chains, but BNB.SMLY was the final output of the
 project. The BNB.SMLY technical implementation is described in H.6.</p>
-<h3
-id="b.1-issuer-different-from-offeror-or-person-seeking-admission-to-trading">B.1
+<h3 id="b.1-issuer-different-from-offeror-or-person-seeking-admission-to-trading">B.1
 Issuer different from offeror or person seeking admission to
 trading</h3>
 <p>TRUE; No identifiable issuer; native SMLY launched in 2014 without a
@@ -849,8 +1009,7 @@ issuer does not have a head office.</p>
 is no official issuer in the sense of MiCA regulations.</p>
 <h3 id="b.7-legal-entity-identifier">B.7 Legal entity identifier</h3>
 <p>N/A</p>
-<h3
-id="b.8-another-identifier-required-pursuant-to-applicable-national-law">B.8
+<h3 id="b.8-another-identifier-required-pursuant-to-applicable-national-law">B.8
 Another identifier required pursuant to applicable national law</h3>
 <p>N/A</p>
 <h3 id="b.9-parent-company">B.9 Parent company</h3>
@@ -874,8 +1033,7 @@ web-based university.” <em>US-China Education Review</em>, 7(12),
 for classroom presentation, evaluation and self-study.” <em>Computers
 &amp; Education</em>, 43(4), 315–343. DOI:
 10.1016/j.compedu.2003.09.004.</p>
-<h2
-id="part-c-information-about-the-operator-of-the-trading-platform-in-cases-where-it-draws-up-the-crypto-asset-white-paper-and-information-about-other-persons-drawing-the-crypto-asset-white-paper-pursuant-to-article-61-second-subparagraph-of-regulation-eu-20231114">Part
+<h2 id="part-c-information-about-the-operator-of-the-trading-platform-in-cases-where-it-draws-up-the-crypto-asset-white-paper-and-information-about-other-persons-drawing-the-crypto-asset-white-paper-pursuant-to-article-61-second-subparagraph-of-regulation-eu-20231114">Part
 C – Information about the operator of the trading platform in cases
 where it draws up the crypto-asset white paper and information about
 other persons drawing the crypto-asset white paper pursuant to Article
@@ -916,8 +1074,7 @@ identified as drawing up the white paper. See the applicability
 statement at the beginning of Part C.</p>
 <h3 id="c.6-legal-entity-identifier">C.6 Legal entity identifier</h3>
 <p>Not applicable.</p>
-<h3
-id="c.7-another-identifier-required-pursuant-to-applicable-national-law">C.7
+<h3 id="c.7-another-identifier-required-pursuant-to-applicable-national-law">C.7
 Another identifier required pursuant to applicable national law</h3>
 <p>Not applicable to this version: no trading-platform operator is
 identified as drawing up the white paper. See the applicability
@@ -954,8 +1111,7 @@ relationships with other project participants are described in A.13.</p>
 business activity</h3>
 <p>Not applicable in relation to a trading-platform operator. See the
 applicability statement at the beginning of Part C.</p>
-<h3
-id="c.13-other-persons-drawing-up-the-crypto-asset-white-paper-according-to-article-61-second-subparagraph-of-regulation-eu-20231114">C.13
+<h3 id="c.13-other-persons-drawing-up-the-crypto-asset-white-paper-according-to-article-61-second-subparagraph-of-regulation-eu-20231114">C.13
 Other persons drawing up the crypto-asset white paper according to
 Article 6(1), second subparagraph, of Regulation (EU) 2023/1114</h3>
 <p>No person is identified in this white paper as drawing up the white
@@ -969,8 +1125,7 @@ Icelandic registration number 531015-0290, LEI 636700LQMUJ4E4WR0417,
 with registered address Lundi 9, 200 Kópavogur, Iceland. Its
 identification here does not, by itself, establish that it acts under
 such an arrangement.</p>
-<h3
-id="c.14-reason-for-drawing-the-white-paper-by-persons-referred-to-in-article-61-second-subparagraph-of-regulation-eu-20231114">C.14
+<h3 id="c.14-reason-for-drawing-the-white-paper-by-persons-referred-to-in-article-61-second-subparagraph-of-regulation-eu-20231114">C.14
 Reason for drawing the white paper by persons referred to in Article
 6(1), second subparagraph, of Regulation (EU) 2023/1114</h3>
 <p>Not applicable on the arrangements identified in this version. See
@@ -1422,8 +1577,7 @@ retrieval time.</strong></p>
 </tr>
 </tbody>
 </table>
-<h3
-id="d.5-details-of-all-persons-involved-in-the-implementation-of-the-crypto-asset-projects">D.5
+<h3 id="d.5-details-of-all-persons-involved-in-the-implementation-of-the-crypto-asset-projects">D.5
 Details of all persons involved in the implementation of the
 crypto-asset projects</h3>
 <p>Implementation responsibilities are distributed among the persons and
@@ -1543,8 +1697,7 @@ to a good or service supplied by an issuer. No identifiable issuer
 supplies goods or services in exchange for it, and holding it does not
 give access to SmileyTutor or SmileyStore services. It also confers no
 profit-sharing, dividend, revenue or governance rights.</p>
-<h3
-id="d.7-key-features-of-goodsservices-for-utility-token-projects">D.7
+<h3 id="d.7-key-features-of-goodsservices-for-utility-token-projects">D.7
 Key Features of Goods/Services for Utility Token Projects</h3>
 <p>Not applicable to native SMLY on the classification stated in D.6.
 Nevertheless, its documented educational reward and payment uses, the
@@ -1691,8 +1844,7 @@ Psychology</em>, 38(1), 47–60.</p>
 and Stefansson, G. (2021). “Using real data for statistics education in
 an open-source learning environment.” <em>Teaching Statistics</em>,
 43(1), 5–12. DOI: 10.1111/test.12237.</p>
-<h2
-id="part-e-information-about-the-offer-to-the-public-of-crypto-assets-or-their-admission-to-trading">Part
+<h2 id="part-e-information-about-the-offer-to-the-public-of-crypto-assets-or-their-admission-to-trading">Part
 E – Information about the offer to the public of crypto-assets or their
 admission to trading</h2>
 <p><strong>Applicability of this Part</strong></p>
@@ -1860,8 +2012,7 @@ beginning</h3>
 <p>Not applicable: no subscription period is established.</p>
 <h3 id="e.22-subscription-period-end">E.22 Subscription period end</h3>
 <p>Not applicable: no subscription period is established.</p>
-<h3
-id="e.23-safeguarding-arrangements-for-offered-fundscrypto--assets">E.23
+<h3 id="e.23-safeguarding-arrangements-for-offered-fundscrypto--assets">E.23
 Safeguarding arrangements for offered funds/crypto- Assets</h3>
 <p>Not applicable to subscription proceeds: none are collected under
 this version.</p>
@@ -1895,7 +2046,7 @@ and network. Conversion between them is a separate operation.</p>
 Third-party processing times depend on provider procedures, network
 conditions and confirmation requirements. No guaranteed transfer or
 conversion time is represented here.</p>
-<h3 id="e.29-purchasers-technical-requirements">E.29 Purchaser's
+<h3 id="e.29-purchasers-technical-requirements">E.29 Purchaser&#39;s
 technical requirements</h3>
 <p>No subscription-specific technical requirements are established under
 this version.</p>
@@ -2255,8 +2406,7 @@ SMLY.</p>
 https://smileycharity.is is SmileyCharity’s website. Identifying it here
 does not, by itself, establish that SmileyCharity is the issuer of
 either representation.</p>
-<h3
-id="f.9-starting-date-of-offer-to-the-public-or-admission-to-trading">F.9
+<h3 id="f.9-starting-date-of-offer-to-the-public-or-admission-to-trading">F.9
 Starting date of offer to the public or admission to trading</h3>
 <p>Not applicable: no offer to the public or admission to trading is
 sought.</p>
@@ -2268,8 +2418,7 @@ services provided by the issuer</h3>
 <h3 id="f.12-language-or-languages-of-the-crypto-asset-white-paper">F.12
 Language or languages of the crypto-asset white paper</h3>
 <p><strong>EN — English</strong></p>
-<h3
-id="f.13-digital-token-identifier-code-dti-used-to-uniquely-identify-the-crypto-asset-or-each-of-the-several-crypto-assets-to-which-the-white-paper-relates-where-available">F.13
+<h3 id="f.13-digital-token-identifier-code-dti-used-to-uniquely-identify-the-crypto-asset-or-each-of-the-several-crypto-assets-to-which-the-white-paper-relates-where-available">F.13
 Digital token identifier code (DTI) used to uniquely identify the
 crypto-asset or each of the several crypto assets to which the white
 paper relates, where available</h3>
@@ -2285,8 +2434,7 @@ NRHV9DD07</p>
 Architectural;Organisational</p>
 <p><strong>Digital Asset External Identifiers Type + Value:</strong>
 ISIN:XTT3F45B3WV5</p>
-<h3
-id="f.14-functionally-fungible-group-digital-token-identifier-where-available">F.14
+<h3 id="f.14-functionally-fungible-group-digital-token-identifier-where-available">F.14
 Functionally fungible group digital token identifier, where
 available</h3>
 <p>A functionally fungible group DTI has not yet been verified for the
@@ -2321,8 +2469,7 @@ cyber-university.” <em>Computers &amp; Education</em>, 78, 344–351. DOI:
 Hafsteinsson, E. K. and Stefansson, G. (2021). “Using real data for
 statistics education in an open-source learning environment.”
 <em>Teaching Statistics</em>, 43(1), 5–12. DOI: 10.1111/test.12237.</p>
-<h2
-id="part-g-information-on-the-rights-and-obligations-attached-to-the-crypto-assets">Part
+<h2 id="part-g-information-on-the-rights-and-obligations-attached-to-the-crypto-assets">Part
 G – Information on the rights and obligations attached to the
 crypto-assets</h2>
 <h3 id="g.1-purchaser-rights-and-obligations">G.1 Purchaser rights and
@@ -3170,8 +3317,7 @@ Application</em>, 3(5–6), 63–73. DOI:
 <p><strong>[I-3]</strong> Stefansson, G. and Lentin, J. (2017). “From
 Smileys to Smileycoins: Using a Cryptocurrency in Education.”
 <em>Ledger</em>, 2, 38–54. DOI: 10.5915/LEDGER.2017.103.</p>
-<h1
-id="part-j-information-on-the-sustainability-indicators-in-relation-to-adverse-impact-on-the-climate-and-other-environment-related-adverse-impacts">Part
+<h1 id="part-j-information-on-the-sustainability-indicators-in-relation-to-adverse-impact-on-the-climate-and-other-environment-related-adverse-impacts">Part
 J – Information on the sustainability indicators in relation to adverse
 impact on the climate and other environment-related adverse impacts</h1>
 <p>This Part is provided in accordance with Article 6(1), point (j) and
@@ -3443,3 +3589,5 @@ Emission factor applied | 11 g CO2e/kWh | – |</div>
 <p>[J-1] Stefansson, G. and Lentin, J. (2017). “From Smileys to
 Smileycoins: Using a Cryptocurrency in Education.” <em>Ledger</em>, 2,
 38–54. DOI: 10.5915/LEDGER.2017.103.</p>
+</body>
+</html>
